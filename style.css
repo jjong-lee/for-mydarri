@@ -1,0 +1,135 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  background-image: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+  font-family: 'Nanum Myeongjo', serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  font-size: 16px;
+}
+
+.container {
+  text-align: center;
+  width: 90%;
+  max-width: 600px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+  color: white;
+  margin: 0 auto;
+}
+
+button {
+  font-size: 1.2rem;
+  padding: 12px 24px;
+  background-color: #ffafbd;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 8px;
+}
+
+button:hover {
+  background-color: #ffc3a0;
+}
+
+.hidden {
+  display: none !important;
+}
+
+/* 메시지 전용 영역 */
+#messageContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#messageText {
+  font-size: 1.4rem;
+  margin: 20px 0;
+  white-space: pre-line;
+  line-height: 1.8;
+}
+
+/* 사진만 나올 때 */
+#photoContainer {
+  display: none;
+}
+
+#photoDisplay {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 20px 0;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* 사진+메시지 함께 나올 때 */
+#bothContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+#bothPhoto {
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 16px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  display: block;
+}
+
+#bothMessage {
+  font-size: 1.4rem;
+  white-space: pre-line;
+  line-height: 1.8;
+  text-align: center;
+  color: white;
+}
+
+/* 최종 메시지 */
+#finalContainer p {
+  font-size: 1.8rem;
+  margin-bottom: 16px;
+  color: #ffdede;
+}
+
+#yesButton {
+  background-color: #f15f79;
+  padding: 12px 24px;
+}
+
+/* 모바일 최적화 */
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+
+  button {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+
+  #messageText,
+  #bothMessage {
+    font-size: 1.2rem;
+  }
+
+  #finalContainer p {
+    font-size: 1.4rem;
+  }
+
+  #yesButton {
+    padding: 10px 24px;
+  }
+}

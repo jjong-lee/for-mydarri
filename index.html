@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Darri</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
+</head>
+<body>
+  <audio id="bgm" src="audio/MyLove.mp3" loop></audio>
+
+  <div class="container">
+    <div id="introContainer">
+      <p id="introText">오늘은 달이 한테 꼭 하고 싶은 말이 있어.</p>
+      <button id="yesStart">응, 들어볼게</button>
+      <button id="noStart">아니, 나중에</button>
+      <p id="noMessage" class="hidden">소원권은 없지만! 한번만 눌러주라... 꼭!</p>
+    </div>
+    <div id="messageContainer" class="hidden">
+      <p id="messageText"></p>
+    </div>
+
+    <div id="photoContainer" class="hidden">
+      <img id="photoDisplay" src="" alt="" style="display: none;" />
+    </div>
+
+    <div id="bothContainer" class="hidden">
+      <img id="bothPhoto" src="" alt="" />
+      <p id="bothMessage"></p>
+    </div>
+
+    <div id="finalContainer" class="hidden">
+      <p>달이야 나랑 결혼해줄래?🤵🏻❤️👰🏻‍♀️ </p>
+      <button id="yesButton">YES 💍</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
